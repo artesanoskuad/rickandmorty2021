@@ -57,7 +57,8 @@ class PersonajesFragment : Fragment() {
     }
 
     private fun handleUI(safePersonajeResponse: PersonajesResponse) {
-        Toast.makeText(context, "$safePersonajeResponse", Toast.LENGTH_SHORT).show()
+        val adapter = PersonajeAdapter(safePersonajeResponse.results)
+        binding.rvPersonajes.adapter = adapter
     }
 
     private fun setupRecyclerView() {
