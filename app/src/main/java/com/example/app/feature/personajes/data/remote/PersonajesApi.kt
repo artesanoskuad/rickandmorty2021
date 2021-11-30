@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface PersonajesApi {
 
-    @GET("/character")
+    @GET("character")
     suspend fun obtenerPersonajes() : Response<PersonajesResponse>
 
 }
