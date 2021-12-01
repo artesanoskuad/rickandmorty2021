@@ -1,4 +1,4 @@
-package com.example.app.feature.personajes.data.model
+package com.example.app.common.data.model
 
 data class Info(
     val count : Int,
