@@ -7,7 +7,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/content"
-        android:name="com.example.app.feature.location.LocationFragment"
+        android:name="com.example.app.feature.location.ui.LocationFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
