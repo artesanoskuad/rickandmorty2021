@@ -58,7 +58,6 @@ class LocationFragment: Fragment() {
     private fun handleUI(safeLocationResponse: LocationsResponse) {
         val adapter = LocationAdapter(safeLocationResponse.results)
         binding.rvLocation.adapter = adapter
-
     }
 
     private fun setupRecyclerView() {

@@ -29,7 +29,6 @@ class LocationsViewModel(private val locationsRepository: LocationsRepository) :
         } else {
             // Todo mostrar mensaje de error en la vista
         }
-
 }
 
     private fun handleBody(body: LocationsResponse?) {
