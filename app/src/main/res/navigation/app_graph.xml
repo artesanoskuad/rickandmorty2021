@@ -15,4 +15,7 @@
         android:name="com.example.app.feature.location.ui.LocationFragment"
         android:label="LocationFragment"
         tools:layout="@layout/fragment_location"/>
+
+
+
 </navigation>

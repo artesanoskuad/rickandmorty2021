@@ -2,4 +2,12 @@
     <string name="app_name">app</string>
     <string name="personas">Personas</string>
     <string name="locations">Locations</string>
+    <string name="splash">Splash</string>
+    <string name="onboarding">Onboarding</string>
+    <string name="prelogin">Prelogin</string>
+    <string name="rootdevice">RootDevice</string>
+    <string name="no_internet">No tiene conexión a Internet</string>
+    <string name="server_error">En estos momentos tenemos problemas con nuestros servidores, Intenta más tarde</string>
+    <string name="feature_flag_off">En estos momentos estamos realizando una mantención a nuestros servidores, intena nuevamente en 05:36</string>
+    <string name="biometric">Biometric View</string>
 </resources>
