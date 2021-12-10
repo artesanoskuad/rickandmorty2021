@@ -12,7 +12,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rickandmorty2021">
         <activity
-            android:name=".MainActivity"
+            android:name=".feature.prelogin.BiometricActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.prelogin.FeatureFlagOffActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.prelogin.ServerErrorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.prelogin.NoInternetActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.prelogin.RootDeviceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.prelogin.PreLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.onboarding.OnboardingActivity"
+            android:exported="false" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".feature.splash.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
