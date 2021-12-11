@@ -13,8 +13,16 @@ class ServerErrorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityServerErrorBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setLottieAnimationProperties()
         setOnClickBtnVolverAIntentar()
     }
+
+    private fun setLottieAnimationProperties() {
+        with(binding.lavInternalServerError){
+            setMinAndMaxFrame(20,50)
+        }
+    }
+
     private fun setOnClickBtnVolverAIntentar() {
         binding.btnVolverAIntentar.setOnClickListener {
             finish()
