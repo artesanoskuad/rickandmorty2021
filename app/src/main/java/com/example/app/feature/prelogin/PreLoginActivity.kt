@@ -8,8 +8,8 @@ import com.example.app.R
 class PreLoginActivity : AppCompatActivity() {
 
     private val isRootDevice = false
-    private val isInternetConexionOff = false
-    private val isServerError = true
+    private val isInternetConexionOff = true
+    private val isServerError = false
     private val isFeatureFlagOff = false
     private val isBiometricOn = false
 

@@ -6,16 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".feature.prelogin.NoInternetActivity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/no_internet"
-        android:textStyle="bold"
-        android:textSize="@dimen/title"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lav_no_internet_error"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/no_internet_error_alter"
+        tools:src="@drawable/no_internet_error"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_no_internet_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="Sin acceso a internet \nCompruebe su conexión"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lav_no_internet_error" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_reintentar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Volver a Intentar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_no_internet_message" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
