@@ -10,4 +10,6 @@
     <string name="server_error">En estos momentos tenemos problemas con nuestros servidores, Intenta más tarde</string>
     <string name="feature_flag_off">En estos momentos estamos realizando una mantención a nuestros servidores, intena nuevamente en 05:36</string>
     <string name="biometric">Biometric View</string>
+    <string name="server_error_message">Internal Server Error \nPor favor intentar de nuevo</string>
+    <string name="volver_a_intentar_btn">Volver a Intentar</string>
 </resources>

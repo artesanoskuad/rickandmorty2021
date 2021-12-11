@@ -1,12 +1,23 @@
 package com.example.app.feature.prelogin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.app.R
+import com.example.app.databinding.ActivityServerErrorBinding
 
 class ServerErrorActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    private lateinit var binding: ActivityServerErrorBinding
+
+    override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_server_error)
+        binding = ActivityServerErrorBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        setOnClickBtnVolverAIntentar()
+    }
+    private fun setOnClickBtnVolverAIntentar() {
+        binding.btnVolverAIntentar.setOnClickListener {
+            finish()
+        }
     }
 }
