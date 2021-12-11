@@ -9,9 +9,9 @@ class PreLoginActivity : AppCompatActivity() {
 
     private val isRootDevice = false
     private val isInternetConexionOff = false
-    private val isServerError = false
+    private val isServerError = true
     private val isFeatureFlagOff = false
-    private val isBiometricOn = true
+    private val isBiometricOn = false
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +29,7 @@ class PreLoginActivity : AppCompatActivity() {
         }
 
         if(isServerError){
-            val intent = Intent(this, NoInternetActivity::class.java)
+            val intent = Intent(this, ServerErrorActivity::class.java)
             startActivity(intent)
         }
 
