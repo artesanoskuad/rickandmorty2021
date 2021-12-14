@@ -8,7 +8,7 @@ android {
     compileSdk 31
 
     defaultConfig {
-        applicationId "com.example.app"
+        applicationId "com.artesanoskuad.rickandmorty"
         minSdk 23
         targetSdk 31
         versionCode 1
@@ -21,10 +21,21 @@ android {
         viewBinding true
     }
 
+    signingConfigs {
+        release {
+            storeFile file('../config/signing/no-production.jks')
+            storePassword = 'fake1234'
+            keyAlias = 'fakeAlias'
+            keyPassword = 'fake1234'
+        }
+    }
+
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {
@@ -38,8 +49,6 @@ android {
 
 
 dependencies {
-
-    implementation 'com.airbnb.android:lottie:4.2.1'
 
     implementation 'androidx.core:core-ktx:1.7.0'
     implementation 'androidx.appcompat:appcompat:1.4.0'
