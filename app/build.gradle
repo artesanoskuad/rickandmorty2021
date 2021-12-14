@@ -23,7 +23,7 @@ android {
 
     signingConfigs {
         release {
-            storeFile file('../config/signing/no-production.jks')
+            storeFile file("$rootProject.rootDir/config/signing/no-production.jks")
             storePassword = 'fake1234'
             keyAlias = 'fakeAlias'
             keyPassword = 'fake1234'
