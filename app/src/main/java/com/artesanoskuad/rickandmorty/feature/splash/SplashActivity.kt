@@ -10,7 +10,7 @@ import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.artesanoskuad.rickandmorty.R
 import com.artesanoskuad.rickandmorty.feature.onboarding.OnboardingActivity
-import com.artesanoskuad.rickandmorty.feature.prelogin.PreLoginActivity
+import com.artesanoskuad.rickandmorty.feature.prelogin.ui.PreLoginActivity
 
 
 @SuppressLint("CustomSplashScreen")

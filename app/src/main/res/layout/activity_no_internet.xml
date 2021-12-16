@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".feature.prelogin.NoInternetActivity">
+    tools:context=".feature.prelogin.ui.NoInternetActivity">
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lav_no_internet_error"

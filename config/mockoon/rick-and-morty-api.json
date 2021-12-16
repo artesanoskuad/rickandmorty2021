@@ -15,7 +15,7 @@
       "responses": [
         {
           "uuid": "ea7b5cb8-42d3-443b-be8b-585d7131c1d4",
-          "body": "{\n  \"isEnabled\": false\n}",
+          "body": "{\n  \"isEnabled\": true\n}",
           "latency": 0,
           "statusCode": 200,
           "label": "",
