@@ -1,4 +1,4 @@
-package com.artesanoskuad.rickandmorty.feature.prelogin
+package com.artesanoskuad.rickandmorty.feature.prelogin.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

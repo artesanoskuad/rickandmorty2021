@@ -3,4 +3,7 @@
     <dimen name="title">60sp</dimen>
     <dimen name="onboarding_title">60sp</dimen>
     <dimen name="prelogin_title">60sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>
