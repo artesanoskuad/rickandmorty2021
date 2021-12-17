@@ -1,74 +1,135 @@
 {
-  "uuid": "f281159a-4c92-4596-b7f1-8f76c242ac8c",
-  "lastMigration": 19,
-  "name": "Rick and morty api",
-  "endpointPrefix": "",
-  "latency": 0,
-  "port": 3000,
-  "hostname": "0.0.0.0",
-  "routes": [
-    {
-      "uuid": "a7138429-0d4e-41d2-8e87-0d4c919fa859",
-      "documentation": "",
-      "method": "get",
-      "endpoint": "api/prelogin",
-      "responses": [
+    "source": "mockoon:1.17.0",
+    "data": [
         {
-          "uuid": "ea7b5cb8-42d3-443b-be8b-585d7131c1d4",
-          "body": "{\n  \"isEnabled\": true\n}",
-          "latency": 0,
-          "statusCode": 200,
-          "label": "",
-          "headers": [],
-          "filePath": "",
-          "sendFileAsBody": false,
-          "rules": [
-            {
-              "target": "body",
-              "modifier": "",
-              "value": "",
-              "operator": "equals"
+            "type": "environment",
+            "item": {
+                "uuid": "f281159a-4c92-4596-b7f1-8f76c242ac8c",
+                "lastMigration": 19,
+                "name": "Rick and morty api",
+                "endpointPrefix": "",
+                "latency": 0,
+                "port": 3000,
+                "hostname": "0.0.0.0",
+                "routes": [
+                    {
+                        "uuid": "a7138429-0d4e-41d2-8e87-0d4c919fa859",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "api/prelogin",
+                        "responses": [
+                            {
+                                "uuid": "ea7b5cb8-42d3-443b-be8b-585d7131c1d4",
+                                "body": "{\n  \"isEnabled\": true\n}",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [
+                                    {
+                                        "target": "body",
+                                        "modifier": "",
+                                        "value": "",
+                                        "operator": "equals"
+                                    }
+                                ],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false,
+                                "fallbackTo404": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false,
+                        "sequentialResponse": false
+                    },
+                    {
+                        "uuid": "a5a3a347-d530-44f0-9678-52ab9392afde",
+                        "documentation": "",
+                        "method": "get",
+                        "endpoint": "api/productos",
+                        "responses": [
+                            {
+                                "uuid": "dee2f010-4e5f-4f2b-b80f-d2d8c74a5d05",
+                                "body": "{\n  \"state\" : {\n    \"enabled\" : true,\n    \"uptime\": null\n  },\n  \"products\" : [\n    {\n      \"id\": \"1\",\n      \"name\" : \"Producto 1\",\n      \"price\" : 5000,\n      \"enabled\" : true\n    },\n    {\n      \"id\": \"2\",\n      \"name\" : \"Producto 2\",\n      \"price\" : 5800,\n      \"enabled\" : true\n    },\n    {\n      \"id\": \"3\",\n      \"name\" : \"Producto 3\",\n      \"price\" : 5700,\n      \"enabled\" : true\n    },\n    {\n      \"id\": \"4\",\n      \"name\" : \"Producto 4\",\n      \"price\" : 3000,\n      \"enabled\" : false\n    }\n  ]\n}",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false,
+                                "fallbackTo404": false
+                            },
+                            {
+                                "uuid": "6a851f72-3ce7-4953-a8c8-b3cff9c10c16",
+                                "body": "{\n  \"state\" : {\n    \"enabled\" : false,\n    \"uptime\": 60\n  },\n  \"products\" : null\n}",
+                                "latency": 0,
+                                "statusCode": 200,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false,
+                                "fallbackTo404": false
+                            },
+                            {
+                                "uuid": "bca68532-c2d8-4389-8df0-4f354a18c88b",
+                                "body": "{}",
+                                "latency": 0,
+                                "statusCode": 500,
+                                "label": "",
+                                "headers": [],
+                                "filePath": "",
+                                "sendFileAsBody": false,
+                                "rules": [],
+                                "rulesOperator": "OR",
+                                "disableTemplating": false,
+                                "fallbackTo404": false
+                            }
+                        ],
+                        "enabled": true,
+                        "randomResponse": false,
+                        "sequentialResponse": false
+                    }
+                ],
+                "proxyMode": false,
+                "proxyHost": "",
+                "proxyRemovePrefix": false,
+                "tlsOptions": {
+                    "enabled": false,
+                    "type": "CERT",
+                    "pfxPath": "",
+                    "certPath": "",
+                    "keyPath": "",
+                    "caPath": "",
+                    "passphrase": ""
+                },
+                "cors": true,
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "proxyReqHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ],
+                "proxyResHeaders": [
+                    {
+                        "key": "",
+                        "value": ""
+                    }
+                ]
             }
-          ],
-          "rulesOperator": "OR",
-          "disableTemplating": false,
-          "fallbackTo404": false
         }
-      ],
-      "enabled": true,
-      "randomResponse": false,
-      "sequentialResponse": false
-    }
-  ],
-  "proxyMode": false,
-  "proxyHost": "",
-  "proxyRemovePrefix": false,
-  "tlsOptions": {
-    "enabled": false,
-    "type": "CERT",
-    "pfxPath": "",
-    "certPath": "",
-    "keyPath": "",
-    "caPath": "",
-    "passphrase": ""
-  },
-  "cors": true,
-  "headers": [
-    {
-      "key": "Content-Type",
-      "value": "application/json"
-    }
-  ],
-  "proxyReqHeaders": [
-    {
-      "key": "",
-      "value": ""
-    }
-  ],
-  "proxyResHeaders": [
-    {
-      "key": "",
-      "value": ""
-    }
-  ]
+    ]
 }
