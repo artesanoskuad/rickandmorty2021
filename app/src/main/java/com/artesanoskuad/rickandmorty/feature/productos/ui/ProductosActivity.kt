@@ -6,7 +6,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
 import com.artesanoskuad.rickandmorty.databinding.ActivityProductosBinding
-import com.artesanoskuad.rickandmorty.feature.prelogin.FeatureFlagOffActivity
+import com.artesanoskuad.rickandmorty.feature.prelogin.ui.FeatureFlagOffActivity
 import com.artesanoskuad.rickandmorty.feature.productos.data.ProductosDataRepository
 import com.artesanoskuad.rickandmorty.feature.productos.data.model.Producto
 import com.artesanoskuad.rickandmorty.feature.productos.data.remote.ProductoRetrofitClient
