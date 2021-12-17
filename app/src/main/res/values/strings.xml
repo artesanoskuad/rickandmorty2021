@@ -12,6 +12,8 @@
     <string name="biometric">Biometric View</string>
     <string name="server_error_message">Internal Server Error \nPor favor intentar de nuevo</string>
     <string name="volver_a_intentar_btn">Volver a Intentar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_registro">RegistroActivity</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
